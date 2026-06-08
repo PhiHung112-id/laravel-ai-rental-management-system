@@ -1,59 +1,134 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏠 Quản Gia 5.0 – Hệ sinh thái quản lý không gian sống thông minh
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Quản Gia 5.0** là nền tảng số hỗ trợ quản lý phòng trọ, căn hộ dịch vụ và không gian sống theo hướng hiện đại. Hệ thống giúp chủ nhà, ban quản lý và cư dân dễ dàng quản lý thông tin phòng, khách thuê, hợp đồng, hóa đơn, thông báo và cộng đồng cư dân trên cùng một nền tảng.
 
-## About Laravel
+Dự án được xây dựng theo mô hình **Laravel MVC**, kết hợp với công nghệ **AI** nhằm hỗ trợ dự đoán giá thuê/giá bán dựa trên các yếu tố như diện tích, vị trí, tiện ích và đặc điểm bất động sản. Mục tiêu của hệ thống là nâng cao hiệu quả quản lý, tối ưu trải nghiệm người dùng và hướng đến mô hình quản lý không gian sống thông minh.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Tính năng nổi bật
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🏢 Quản lý phòng và căn hộ
 
-## Learning Laravel
+Cho phép quản lý danh sách phòng/căn hộ, trạng thái thuê, thông tin chi tiết, giá thuê, tiện ích và hình ảnh minh họa.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 👥 Quản lý khách thuê
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Hỗ trợ lưu trữ thông tin khách thuê, lịch sử thuê phòng, hợp đồng và các thông tin liên quan trong quá trình sử dụng dịch vụ.
 
-## Laravel Sponsors
+### 📄 Quản lý hợp đồng và hóa đơn
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Hệ thống hỗ trợ quản lý hợp đồng thuê, hóa đơn dịch vụ, tiền phòng, điện, nước và các khoản phí phát sinh một cách tập trung.
 
-### Premium Partners
+### 🤖 Dự đoán giá bằng trí tuệ nhân tạo
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Tích hợp mô hình **RandomForestRegressor** thông qua **Python/FastAPI**, giúp dự đoán giá thuê hoặc giá bán dựa trên dữ liệu đầu vào như diện tích, khu vực và tiện ích.
 
-## Contributing
+### 💬 Cộng đồng cư dân
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Tích hợp sảnh chat real-time giúp cư dân trao đổi, nhận thông báo và tương tác với ban quản lý nhanh chóng.
 
-## Code of Conduct
+### 🔔 Thông báo hệ thống
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Hệ thống thông báo giúp ban quản lý gửi tin tức, cảnh báo, nhắc nhở thanh toán và các thông tin quan trọng đến cư dân.
 
-## Security Vulnerabilities
+### 🎨 Giao diện hiện đại
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Giao diện được thiết kế theo phong cách hiện đại, thân thiện, dễ sử dụng và tương thích với cả máy tính lẫn thiết bị di động.
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🛠 Công nghệ sử dụng
+
+| Thành phần | Công nghệ                     |
+| ---------- | ----------------------------- |
+| Backend    | Laravel Framework, PHP 8.x    |
+| Frontend   | Bootstrap 4, jQuery, AJAX     |
+| AI/ML      | Python, FastAPI, Scikit-learn |
+| Database   | MySQL                         |
+| Web Server | Apache / Nginx                |
+| Kiến trúc  | MVC                           |
+
+---
+
+## 📦 Hướng dẫn cài đặt
+
+### 1. Clone dự án
+
+```bash
+git clone https://github.com/username/quan-gia-5.0.git
+cd quan-gia-5.0
+```
+
+### 2. Cài đặt thư viện
+
+```bash
+composer install
+npm install
+```
+
+### 3. Cấu hình môi trường
+
+Sao chép file `.env.example` thành `.env`:
+
+```bash
+cp .env.example .env
+```
+
+Sau đó cấu hình thông tin kết nối cơ sở dữ liệu trong file `.env`:
+
+```env
+DB_DATABASE=ten_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4. Tạo khóa ứng dụng
+
+```bash
+php artisan key:generate
+```
+
+### 5. Chạy dự án
+
+```bash
+php artisan serve
+```
+
+Truy cập hệ thống tại:
+
+```bash
+http://127.0.0.1:8000
+```
+
+---
+
+## 📸 Hình ảnh minh họa
+
+> Có thể chèn các ảnh chụp màn hình giao diện hệ thống tại đây, ví dụ:
+>
+> * Trang chủ
+> * Trang danh sách phòng
+> * Trang chi tiết phòng
+> * Trang quản lý hợp đồng
+> * Trang hóa đơn
+> * Trang dự đoán giá bằng AI
+> * Giao diện chat cộng đồng cư dân
+
+---
+
+## 👤 Tác giả
+
+Dự án được thực hiện bởi:
+
+**Nguyễn Phi Hùng**
+Sinh viên chuyên ngành **Kỹ thuật phần mềm**
+
+* Email: `phihungone1@gmail.com`
+* GitHub: `https://github.com/phihungone1`
+
+---
+
+## 📌 Mục tiêu dự án
+
+Quản Gia 5.0 hướng đến việc xây dựng một hệ thống quản lý nhà trọ/căn hộ dịch vụ thông minh, giúp giảm thao tác thủ công, tăng tính minh bạch trong quản lý và nâng cao trải nghiệm cho cả chủ nhà lẫn cư dân.
