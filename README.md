@@ -1,134 +1,216 @@
-# 🏠 Quản Gia 5.0 – Hệ sinh thái quản lý không gian sống thông minh
+# 🏠 Laravel AI Rental Management System
 
-**Quản Gia 5.0** là nền tảng số hỗ trợ quản lý phòng trọ, căn hộ dịch vụ và không gian sống theo hướng hiện đại. Hệ thống giúp chủ nhà, ban quản lý và cư dân dễ dàng quản lý thông tin phòng, khách thuê, hợp đồng, hóa đơn, thông báo và cộng đồng cư dân trên cùng một nền tảng.
-
-Dự án được xây dựng theo mô hình **Laravel MVC**, kết hợp với công nghệ **AI** nhằm hỗ trợ dự đoán giá thuê/giá bán dựa trên các yếu tố như diện tích, vị trí, tiện ích và đặc điểm bất động sản. Mục tiêu của hệ thống là nâng cao hiệu quả quản lý, tối ưu trải nghiệm người dùng và hướng đến mô hình quản lý không gian sống thông minh.
+A PHP Laravel web application for rental room and apartment management, featuring tenant management, contract management, invoice management, notification system, resident communication, and AI-powered rental price prediction.
 
 ---
 
-## 🚀 Tính năng nổi bật
+## 📌 Overview
 
-### 🏢 Quản lý phòng và căn hộ
+**Laravel AI Rental Management System** is a smart rental management platform built with **PHP Laravel MVC**.
+The system is designed to help landlords and property managers manage rental rooms, tenants, contracts, invoices, and resident information more efficiently.
 
-Cho phép quản lý danh sách phòng/căn hộ, trạng thái thuê, thông tin chi tiết, giá thuê, tiện ích và hình ảnh minh họa.
+In addition to core management features, the project integrates an AI service using **Python FastAPI** and **Scikit-learn** to predict rental prices based on room area, location, utilities, and other property-related factors.
 
-### 👥 Quản lý khách thuê
-
-Hỗ trợ lưu trữ thông tin khách thuê, lịch sử thuê phòng, hợp đồng và các thông tin liên quan trong quá trình sử dụng dịch vụ.
-
-### 📄 Quản lý hợp đồng và hóa đơn
-
-Hệ thống hỗ trợ quản lý hợp đồng thuê, hóa đơn dịch vụ, tiền phòng, điện, nước và các khoản phí phát sinh một cách tập trung.
-
-### 🤖 Dự đoán giá bằng trí tuệ nhân tạo
-
-Tích hợp mô hình **RandomForestRegressor** thông qua **Python/FastAPI**, giúp dự đoán giá thuê hoặc giá bán dựa trên dữ liệu đầu vào như diện tích, khu vực và tiện ích.
-
-### 💬 Cộng đồng cư dân
-
-Tích hợp sảnh chat real-time giúp cư dân trao đổi, nhận thông báo và tương tác với ban quản lý nhanh chóng.
-
-### 🔔 Thông báo hệ thống
-
-Hệ thống thông báo giúp ban quản lý gửi tin tức, cảnh báo, nhắc nhở thanh toán và các thông tin quan trọng đến cư dân.
-
-### 🎨 Giao diện hiện đại
-
-Giao diện được thiết kế theo phong cách hiện đại, thân thiện, dễ sử dụng và tương thích với cả máy tính lẫn thiết bị di động.
+This project was developed as a practical web application to combine traditional rental management with artificial intelligence technology.
 
 ---
 
-## 🛠 Công nghệ sử dụng
+## 🚀 Key Features
 
-| Thành phần | Công nghệ                     |
-| ---------- | ----------------------------- |
-| Backend    | Laravel Framework, PHP 8.x    |
-| Frontend   | Bootstrap 4, jQuery, AJAX     |
-| AI/ML      | Python, FastAPI, Scikit-learn |
-| Database   | MySQL                         |
-| Web Server | Apache / Nginx                |
-| Kiến trúc  | MVC                           |
+### 🏢 Room Management
+
+Manage rental rooms or apartments, including room details, rental price, availability status, utilities, and images.
+
+### 👥 Tenant Management
+
+Store and manage tenant information, rental history, contact details, and related rental data.
+
+### 📄 Contract Management
+
+Create, view, and manage rental contracts between landlords and tenants.
+
+### 💰 Invoice Management
+
+Manage monthly invoices, rental fees, electricity bills, water bills, service fees, and payment status.
+
+### 🔔 Notification System
+
+Send important announcements, payment reminders, and system notifications to tenants.
+
+### 💬 Resident Communication
+
+Support communication between residents and the management team through a community chat feature.
+
+### 🤖 AI Rental Price Prediction
+
+Use a machine learning model to predict rental prices based on input data such as area, location, utilities, and property features.
+
+### 🎨 Responsive Interface
+
+Provide a modern and user-friendly interface that works well on both desktop and mobile devices.
 
 ---
 
-## 📦 Hướng dẫn cài đặt
+## 🛠 Technologies Used
 
-### 1. Clone dự án
+| Category         | Technology                                       |
+| ---------------- | ------------------------------------------------ |
+| Backend          | PHP, Laravel Framework                           |
+| Architecture     | MVC                                              |
+| Frontend         | HTML, CSS, Bootstrap 4, JavaScript, jQuery, AJAX |
+| Database         | MySQL                                            |
+| AI Service       | Python, FastAPI                                  |
+| Machine Learning | Scikit-learn, RandomForestRegressor              |
+| Server           | Apache / Nginx                                   |
+
+---
+
+## 📂 Project Structure
 
 ```bash
-git clone https://github.com/username/quan-gia-5.0.git
-cd quan-gia-5.0
+laravel-ai-rental-management-system/
+│
+├── app/                 # Application logic
+├── bootstrap/           # Laravel bootstrap files
+├── config/              # Configuration files
+├── database/            # Migrations and seeders
+├── public/              # Public assets
+├── resources/           # Views, CSS, JS files
+├── routes/              # Web and API routes
+├── storage/             # Logs and uploaded files
+├── tests/               # Test files
+├── .env.example         # Environment configuration example
+├── artisan              # Laravel command-line tool
+├── composer.json        # PHP dependencies
+├── package.json         # Frontend dependencies
+└── README.md            # Project documentation
 ```
 
-### 2. Cài đặt thư viện
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/PhiHung112-id/laravel-ai-rental-management-system.git
+cd laravel-ai-rental-management-system
+```
+
+### 2. Install PHP dependencies
 
 ```bash
 composer install
+```
+
+### 3. Install frontend dependencies
+
+```bash
 npm install
 ```
 
-### 3. Cấu hình môi trường
-
-Sao chép file `.env.example` thành `.env`:
+### 4. Create environment file
 
 ```bash
 cp .env.example .env
 ```
 
-Sau đó cấu hình thông tin kết nối cơ sở dữ liệu trong file `.env`:
+### 5. Configure database
+
+Open the `.env` file and update your database configuration:
 
 ```env
-DB_DATABASE=ten_database
+DB_DATABASE=your_database_name
 DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 4. Tạo khóa ứng dụng
+### 6. Generate application key
 
 ```bash
 php artisan key:generate
 ```
 
-### 5. Chạy dự án
+### 7. Run database migration
+
+```bash
+php artisan migrate
+```
+
+### 8. Start the development server
 
 ```bash
 php artisan serve
 ```
 
-Truy cập hệ thống tại:
+Open the project in your browser:
 
-```bash
+```text
 http://127.0.0.1:8000
 ```
 
 ---
 
-## 📸 Hình ảnh minh họa
+## 🤖 AI Price Prediction Service
 
-> Có thể chèn các ảnh chụp màn hình giao diện hệ thống tại đây, ví dụ:
->
-> * Trang chủ
-> * Trang danh sách phòng
-> * Trang chi tiết phòng
-> * Trang quản lý hợp đồng
-> * Trang hóa đơn
-> * Trang dự đoán giá bằng AI
-> * Giao diện chat cộng đồng cư dân
+The AI price prediction feature is developed as a separate service using **Python FastAPI**.
+
+The Laravel system sends room information to the AI service, including:
+
+* Room area
+* Location
+* Utilities
+* Property type
+* Other related features
+
+The AI service processes the input data and returns a predicted rental price using a machine learning model.
+
+Main AI technologies:
+
+```text
+Python
+FastAPI
+Scikit-learn
+RandomForestRegressor
+```
 
 ---
 
-## 👤 Tác giả
+## 📸 Screenshots
 
-Dự án được thực hiện bởi:
+> Add project screenshots here.
+
+Example:
+
+```markdown
+![Home Page](screenshots/home.png)
+![Room Management](screenshots/rooms.png)
+![Invoice Management](screenshots/invoices.png)
+![AI Price Prediction](screenshots/ai-prediction.png)
+```
+
+---
+
+## 👤 Author
 
 **Nguyễn Phi Hùng**
-Sinh viên chuyên ngành **Kỹ thuật phần mềm**
+Software Engineering Student
 
-* Email: `phihungone1@gmail.com`
-* GitHub: `https://github.com/phihungone1`
+* GitHub: https://github.com/PhiHung112-id
+* Email: [phihungone1@gmail.com](mailto:phihungone1@gmail.com)
 
 ---
 
-## 📌 Mục tiêu dự án
+## 📌 Project Purpose
 
-Quản Gia 5.0 hướng đến việc xây dựng một hệ thống quản lý nhà trọ/căn hộ dịch vụ thông minh, giúp giảm thao tác thủ công, tăng tính minh bạch trong quản lý và nâng cao trải nghiệm cho cả chủ nhà lẫn cư dân.
+This project was developed to apply **PHP Laravel web development** and **AI technology** to a real-world rental management problem.
+
+The system aims to reduce manual management tasks, improve rental operation efficiency, and provide a better digital experience for landlords, property managers, and tenants.
+
+---
+
+## ⭐ GitHub Repository Description
+
+```text
+A PHP Laravel rental management system with tenant, contract, invoice, notification, resident communication, and AI-powered rental price prediction features.
+```
