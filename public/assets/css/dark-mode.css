@@ -1,0 +1,164 @@
+/* =========================================================================
+   HỆ SINH THÁI QUẢN GIA 5.0 - PREMIUM DARK MODE (BẢN CHUYỂN QUA BODY SELECTOR)
+   ========================================================================= */
+
+/* Toàn cục chế độ tối gán qua lớp phủ body */
+body.dark-mode {
+    background-color: #121824 !important;
+    color: #aeafb8 !important;
+}
+/* --- ĐỒNG BỘ NỀN CHÍNH (Xóa bỏ mảng trắng đằng sau các thẻ) --- */
+body.dark-mode main#view-panel,
+body.dark-mode html {
+    background-color: #121824 !important;
+}
+
+/* Đảm bảo TẤT CẢ các khung chứa (container/wrapper) bên trong không bị kẹt màu nền cũ */
+body.dark-mode .container-fluid,
+body.dark-mode .container,
+body.dark-mode .dashboard-premium-wrapper,
+body.dark-mode .categories-premium-wrapper,
+body.dark-mode .locations-premium-wrapper {
+    background-color: transparent !important;
+}
+
+/* --- SIDEBAR NỀN TỐI --- */
+body.dark-mode nav#sidebar {
+    background: #1a233a !important;
+    border-right-color: #222d4a !important;
+}
+body.dark-mode .menu-header { color: #64748b !important; }
+
+/* --- TOPBAR NỀN TỐI --- */
+/* --- FIX NAVBAR DARK MODE - TỐI SÂU & LÌ --- */
+body.dark-mode .navbar-custom,
+body.dark-mode .topbar,
+body.dark-mode nav.navbar {
+    background: #0f172a !important; /* Màu đen xanh siêu tối (Slate 900) */
+    background-image: none !important; /* Xóa bỏ mọi gradient nếu có */
+    border-bottom: 1px solid #1e293b !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5) !important;
+}
+
+/* Ép các thẻ có class bg-white hoặc light phải tối theo */
+body.dark-mode .bg-white,
+body.dark-mode .bg-light {
+    background-color: #0f172a !important;
+    color: #cbd5e1 !important;
+}
+
+/* Đảm bảo chữ trong navbar nổi bật trên nền tối */
+body.dark-mode .navbar-custom .nav-link,
+body.dark-mode .navbar-custom .navbar-brand {
+    color: #e2e8f0 !important;
+}
+
+/* --- CÁC KHỐI CARD & FORM CHỨC NĂNG --- */
+body.dark-mode .card,
+body.dark-mode .card-custom {
+    background: #1a233a !important;
+    border-color: #222d4a !important;
+    color: #f8fafc !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+body.dark-mode .card-header,
+body.dark-mode .card-header-custom,
+body.dark-mode .card-footer {
+    background: #1e2942 !important;
+    border-bottom-color: #222d4a !important;
+    border-top-color: #222d4a !important;
+    color: #ffffff !important;
+}
+body.dark-mode label,
+body.dark-mode .control-label {
+    color: #94a3b8 !important;
+}
+
+/* --- SỬA TRIỆT ĐỂ: ÉP BẢNG VÀ CÁC Ô ĐỔI SANG NỀN TỐI (HẾT BỊ NỀN TRẮNG CHỮ XÁM) --- */
+body.dark-mode table,
+body.dark-mode .table,
+body.dark-mode .table-custom,
+body.dark-mode table tbody tr,
+body.dark-mode table tbody td {
+    background-color: #1a233a !important;
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode table thead th,
+body.dark-mode .table-custom thead th {
+    background-color: #1e2942 !important;
+    color: #ffffff !important;
+    border-bottom-color: #222d4a !important;
+}
+
+body.dark-mode table tbody td,
+body.dark-mode .table-custom tbody td {
+    border-top-color: #222d4a !important;
+}
+
+/* Hiệu ứng di chuột chọn dòng (Hover) */
+body.dark-mode table.table-hover tbody tr:hover,
+body.dark-mode .table-custom tbody tr:hover,
+body.dark-mode table.table-hover tbody tr:hover td {
+    background-color: #222d4a !important;
+    color: #ffffff !important;
+}
+
+/* --- LÀM SÁNG CHỮ "TÌM KIẾM", "HIỂN THỊ" CỦA DATATABLES --- */
+body.dark-mode .dataTables_wrapper,
+body.dark-mode .dataTables_wrapper .dataTables_length,
+body.dark-mode .dataTables_wrapper .dataTables_filter,
+body.dark-mode .dataTables_wrapper .dataTables_info,
+body.dark-mode .dataTables_wrapper .dataTables_paginate {
+    color: #94a3b8 !important;
+}
+
+/* --- Ô NHẬP LIỆU VÀ NÚT CHỌN TỆP TIN --- */
+body.dark-mode .form-control,
+body.dark-mode .form-control-custom,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea,
+body.dark-mode .dataTables_wrapper .dataTables_filter input,
+body.dark-mode .dataTables_wrapper .dataTables_length select {
+    background-color: #121824 !important;
+    border-color: #2d3748 !important;
+    color: #ffffff !important;
+}
+
+/* Sửa lại thanh chọn tệp tin (File Chooser) cho tiệp màu nền tối */
+body.dark-mode .form-control-file,
+body.dark-mode input[type="file"] {
+    color: #cbd5e1 !important;
+    background-color: #121824 !important;
+    padding: 6px;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-control-custom:focus {
+    border-color: #4e73df !important;
+    background-color: #121824 !important;
+}
+
+body.dark-mode ::placeholder,
+body.dark-mode .form-control::placeholder {
+    color: #5a6a85 !important;
+}
+
+/* --- VĂN BẢN PHỤ & MODAL POP-UP --- */
+body.dark-mode .text-dark,
+body.dark-mode b,
+body.dark-mode strong {
+    color: #f1f5f9 !important;
+}
+body.dark-mode .text-muted,
+body.dark-mode small {
+    color: #64748b !important;
+}
+body.dark-mode .modal-content {
+    background-color: #1a233a !important;
+    color: #fff !important;
+    border: 1px solid #222d4a;
+}
